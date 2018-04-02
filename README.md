@@ -1,3 +1,4 @@
-# my-blockchain<br>
-Repository for the course "Build a Blockchain and a Cryptocurrency from Scratch" on Udemy<br>
-https://www.udemy.com/build-blockchain/
+<p># my-blockchain</p>
+<p>Repository for the course "Build a Blockchain and a Cryptocurrency from Scratch" on Udemy</p>
+<p>https://www.udemy.com/build-blockchain/</p>
+<p>Official code is there: https://github.com/15Dkatz/sf-chain-guides</p>
