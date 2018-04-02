@@ -1,0 +1,84 @@
+{
+	"variables": [],
+	"info": {
+		"name": "my-blockchain",
+		"_postman_id": "5fb86e21-f55c-4b65-b08e-91bfe59a7a2e",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:3001/transact",
+			"request": {
+				"url": "localhost:3001/transact",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"recipient\": \"foo-4dr355\",\n\t\"amount\": 50\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3001/transactions",
+			"request": {
+				"url": "localhost:3001/transactions",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3002/blocks",
+			"request": {
+				"url": "localhost:3002/blocks",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3001/mine",
+			"request": {
+				"url": "localhost:3001/mine",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"data\": \"foo\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3001/blocks",
+			"request": {
+				"url": "localhost:3001/blocks",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
