@@ -1,5 +1,5 @@
 const Wallet = require('./index');
-const TransactionPool = require('./transaction');
+const TransactionPool = require('./transaction-pool');
 
 describe('Wallet', () => {
     let wallet, tp;
@@ -32,7 +32,7 @@ describe('Wallet', () => {
             it('doubles the sendAmount substracted from the wallet balance', () => {
                 expect(
                     transaction.outputs
-                        .find(output => output.address === wallet.publicKey)
+                        .find(output => output.address === wallet.publicKey).amount
                 ).toEqual(wallet.balance - sendAmount * 2);
             });
 
