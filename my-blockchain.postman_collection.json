@@ -10,7 +10,7 @@
 		{
 			"name": "localhost:3001/transact",
 			"request": {
-				"url": "localhost:3001/transact",
+				"url": "localhost:3002/transact",
 				"method": "POST",
 				"header": [
 					{
@@ -21,7 +21,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"recipient\": \"foo-4dr355\",\n\t\"amount\": 50\n}"
+					"raw": "{\n\t\"recipient\": \"foo-4dr355-2\",\n\t\"amount\": 50\n}"
 				},
 				"description": ""
 			},
@@ -30,7 +30,7 @@
 		{
 			"name": "localhost:3001/transactions",
 			"request": {
-				"url": "localhost:3001/transactions",
+				"url": "localhost:3002/transactions",
 				"method": "GET",
 				"header": [],
 				"body": {},
@@ -73,6 +73,17 @@
 			"name": "localhost:3001/blocks",
 			"request": {
 				"url": "localhost:3001/blocks",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3001/public-key",
+			"request": {
+				"url": "localhost:3001/public-key",
 				"method": "GET",
 				"header": [],
 				"body": {},
